@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization Dashboard - Landing Page</title>
+  <title>Humidity Analysis</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- stylesheet for additional modifications -->
@@ -13,7 +13,7 @@
   <!-- navbar -->
 <div navigate>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Web Visualization Landing</a>
+    <a class="navbar-brand" href="../index.html">Web Visualization Landing</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,37 +25,33 @@
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Visualizations/maxtemp.html">Max Temp</a>
-            <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
-            <a class="dropdown-item" href="Visualizations/wind.html">Windspeed</a>
+            <a class="dropdown-item" href="maxtemp.html">Max Temp</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="wind.html">Windspeed</a>
           </div>
         <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparison </a>
+          <a class="nav-link" href="../comparisons.html">Comparison </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
+          <a class="nav-link" href="../data.html">Data</a>
         </li>
       </ul>
     </div>
   </nav>
 </div>
 
-
-<!-- Landing Page Content-->
-
+<!-- Content -->
 <div class="container">
   <div class="row">
       <div class="col-lg-7 col-sm-12">
           <div class="left-box">
-          <h3>Summary: Latitude vs. Various Elements</h3>
+          <h3>Humidity Analysis</h3>
           <hr>
-          <img src="assets/images/Fig0.png" class="float-left" alt="Combined" width="40%" >
-          <p>This project allowed us to analyze how various elements change as measurements are taken closer to he equator. We used the OpenWeatherMap API to pull down data points for random cities to create the dataset. Over 500 cities' data was use to ensure a robust data set.  . 
-          <br>
-          <br>
-          We were interested in analyzing the following elements compared to relative latitude: tempurature, cloudiness, windspeed and humidity.  We used matplotlib to plot the data we gathered and perform the analysis.  You can find the results of the analysis on this website. 
-          .</p>
+          <img src="../assets/images/Fig2.png" class="float-left" alt="Humidity Chart" width="100%" >
+          <p>
+            The latitude vs humidity analysis shows that there is not a clear relationship between latitude and humidity.  We can tell this by how the datapoint are dispersed with no clear pattern. 
+          </p>
           </div>
       </div>
       <div class="col-lg-5 col-sm-12">
@@ -65,16 +61,16 @@
           <div class="container">
               <div class="row">
                 <div class="col-lg-6 col-sm-3">
-                <a href="Visualizations/maxtemp.html"><img src="assets/images/Fig1.png" alt="max temp image" width="100%"></a>
+                <a href="maxtemp.html"><img src="../assets/images/Fig1.png" alt="max temp image" width="100%"></a>
                 </div>
                 <div class="col-lg-6 col-sm-3">
-                <a href="Visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="cloudiness image" width="100%"></a>
+                <a href="cloudiness.html"><img src="../assets/images/Fig3.png" alt="cloudiness image" width="100%"></a>
+                </div>
+                <div class="col-lg-6 col-sm-3 live">
+                <a href="humidity.html"><img src="../assets/images/Fig2.png" alt="humidity image" width="100%"></a>
                 </div>
                 <div class="col-lg-6 col-sm-3">
-                <a href="Visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="humidity image" width="100%"></a>
-                </div>
-                <div class="col-lg-6 col-sm-3">
-                <a href="Visualizations/wind.html"><img src="assets/images/Fig4.png" alt="windspeed image" width="100%"></a>
+                <a href="wind.html"><img src="../assets/images/Fig4.png" alt="windspeed image" width="100%"></a>
                 </div>
               </div>
             </div>
@@ -82,6 +78,12 @@
       </div>
     </div>
   </div>
+  
+      </div>
+    </div>
+  </div>       
+
+
 
 
   <!-- Bootstrap Javascript Component -->
